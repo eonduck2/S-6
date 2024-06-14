@@ -1,5 +1,13 @@
 /**
+ * TYPE[FUNCTION]
+ *
  * STATUS[O]
+ *
+ * CHECKLIST: 함수 초기화
+ *
+ * CHECKLIST: 구조 분해 설계
+ *
+ * TODO: 함수 정의
  *
  * FIXME
  *
