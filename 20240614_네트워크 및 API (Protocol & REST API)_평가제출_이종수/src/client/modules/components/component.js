@@ -10,6 +10,6 @@
  * @param tag 태그 이름
  */
 
-export default (tag) => {
-  return `<${tag}><${tag}>`;
+export default (tag, textNode) => {
+  return `<${tag}>${textNode ?? ""}<${tag}>`;
 };
