@@ -8,5 +8,9 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "express": "^4.19.2",
+    "styled-components": "^6.1.11"
+  }
 }
