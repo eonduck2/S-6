@@ -1,3 +1,5 @@
+import component from "./component.js";
+
 /**
  * TYPE[FUNCTION]
  *
@@ -8,4 +10,7 @@
  * NOTE: 1. title 컴포넌트
  */
 
-export default () => {};
+export default (element) => {
+  const title = component(element);
+  return title;
+};
