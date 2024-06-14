@@ -1,28 +1,22 @@
-import resources from "./resources.js";
+/**
+ * @eonduck2
+ * @param {String} resource 요청 api의 자원
+ * * @param {Number} rowNum id 값으로 검색, 전달된 값 없을 시, 전체 리스트 조회
+ */
+export default (resource, rowNum) => {
+  const url = `https://jsonplaceholder.typicode.com/${resource}/${
+    rowNum ?? ""
+  }`;
 
-const basicUrl = `https://jsonplaceholder.typicode.com/`;
-
-export default () => {
   const xhr = new XMLHttpRequest();
-  xhr.open(`GET`, `${basicUrl}${resources.albums}`, true);
+  xhr.open(`GET`, url, true);
+
   xhr.addEventListener(`load`, () => {
     if (xhr.status === 200) {
       const result = JSON.parse(xhr.responseText);
-
-      const pokemon = result.results;
-
-      const root = document.getElementById(`root`);
-      const ul = document.createElement(`ul`);
-      pokemon.forEach((pokemon) => {
-        const li = document.createElement(`li`);
-        li.textContent = pokemon.name;
-        ul.appendChild(li);
-      });
-      root.appendChild(ul);
+      console.log(result);
+      return result;
     }
   });
-
   xhr.send();
 };
-
-getPokemonAJAX();

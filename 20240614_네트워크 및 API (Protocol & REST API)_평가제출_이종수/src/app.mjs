@@ -1,3 +1,4 @@
-import ajax from "./modules/AJAX/ajax.js";
+import resources from "./modules/AJAX/resources.js";
+import xhr from "./modules/AJAX/ajax.js";
 
-ajax();
+console.log(xhr(resources.albums));

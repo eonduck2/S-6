@@ -1,6 +1,6 @@
 export default {
-  posts: `/posts`,
-  comments: `/comments`,
+  posts: `posts`,
+  comments: `comments`,
   albums: `albums`,
   photos: `photos`,
   todos: `todos`,
