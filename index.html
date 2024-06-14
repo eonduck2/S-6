@@ -17,5 +17,19 @@
       de9810f1-6d4b-529a-a675-c83654b4c237de9810f1-6d4b-529a-a675-c83654b4c237
     </p>
   </body>
-  <script></script>
+  <script>
+    const h2 = document.querySelector(`h2`);
+    h2.addEventListener(`click`, () => {
+      const style = {
+        width: "",
+        fontSize: `4rem`,
+        color: `red`,
+        backgroundColor: `green`,
+      };
+
+      for (let key in style) {
+        h2.style[key] = style[key];
+      }
+    });
+  </script>
 </html>
