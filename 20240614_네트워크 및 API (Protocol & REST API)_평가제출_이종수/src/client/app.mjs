@@ -3,6 +3,4 @@ import xhr from "./modules/AJAX/ajax.js";
 
 window.onload = async () => {
   const test = await xhr(resources.albums);
-
-  console.log(test);
 };
